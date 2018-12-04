@@ -17,11 +17,17 @@
        border-top:10px solid;
        border-color:teal;
     }
+    .container{
+        border:1px solid;
+        border-color:darkgrey;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
 </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" style="background-color:teal; color:white;" href="#">Mike Plass</a>
+        <a class="navbar-brand" style="background-color:teal; color:white; margin-left:60px; padding:30px 60px 30px 60px;" href="#">Mike Plass</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>          
@@ -39,15 +45,16 @@
             </ul>
         </div>
     </nav>
- <!--End Nav--> 
- <form id="contact-form" method="post" action="contact.php" role="form">
+ <!--End Nav-->
+<div class="container">
+    <form id="contact-form" method="post" action="contact.php" role="form" margin=20px>
 
         <div class="messages"></div>
     
         <div class="controls">
     
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="form_name">Name</label>
                         <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Firstname is required.">
@@ -84,7 +91,7 @@
         </div>
     
     </form>
-
+</div>
 <div class="footer">
     <p class="navbar-text">Copyright &copy;</p>    
 
